@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-    --font-mulish: "mulish", sans-serif;
+    --font-mulish: "Mulish", sans-serif;
 
     --color-deepBlue: #02042a;
     --color-lightBlue: #2b84ea;

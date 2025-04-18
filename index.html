@@ -4,8 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/dist/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/dist/tailwind.css">
     <title>Razorpay</title>
+    <style>
+        .coreFeatureSection{
+            background-size: 100% 100%;
+            padding-top: 12rem;
+            padding-bottom: 12rem;
+        }
+    </style>
 </head>
 <body>
     <!--Navbar-->
@@ -434,7 +444,7 @@
     </section>
 
     <!-- feature section-2 -->
-     <section class="bg-[url(/images/feature-section-2BG.svg)] bg-no-repeat bg-cover pt-[10rem] pb-[350px] mt-14">
+    <section class="bg-[url(/images/feature-section-2BG.svg)] bg-no-repeat bg-cover pt-[10rem] pb-[350px] mt-14">
         <div class="relative w-10/12 max-w-[1080px] pt-4 mx-auto">
             <h3 class="font-mulish text-2xl text-white leading-[1.2] font-bold text-center">Explore Razorpay Business Banking</h3>
             <div class="w-6 h-1 bg-greenLight mx-auto mt-[16px] mb-[60px]"></div>
@@ -650,10 +660,10 @@
                 </div>
     
                 <!-- part3 Demo-box-->
-                <div class="flex items-center gap-4 px-[32px] py-[40px] mx-auto mb-[96px] border border-gray-600">
+                <div class="flex items-center gap-4 px-[32px] py-[40px] mx-auto mb-[200px] border border-gray-600 rounded-md">
                     <h3 class="font-mulish text-white text-xl">Check out the live demo to learn how RazorpayX works. <span class="font-bold font-700">No sign-up required!</span></h3>
 
-                    <button class="relative bg-lightBlue flex items-center justify-start text-white px-[18px] py-[14px] rounded-md font-mulish font-bold hover:bg-lightB1ue500 transition-all duration-200 md:pr-[90px]">
+                    <button class="relative bg-lightBlue flex items-center justify-start text-white px-[18px] py-[14px] rounded-md font-mulish font-bold hover:bg-lightB1ue500 cursor-pointer transition-all duration-200 md:pr-[90px]">
                         Check out the Demo
                         <div class="absolute w-12 h-[60px] bg-greenLight right-6 skew-x-[20deg] flex justify-center items-center">
                             <svg viewBox="0 0 24 24"
@@ -669,6 +679,166 @@
                 </div>
             </div>
         </div>
-     </section>
+    </section>
+
+    <!-- New feature -->
+    <section class="relative">
+        <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4">
+            <img src="./images/feature-section1-dottedrows.png" alt=""
+                class="absolute w-[233px] left-[300px] -top-[6rem] -z-[10]"
+            >
+            <img src="./images/feature-section1-dottedrows.png" alt=""
+                class="absolute w-[233px] -right-[3.5rem] -top-[6rem] -z-[10]"
+            >
+
+            <div class="relative w-full grid grid-cols-3 gap-x-4 gap-y-10 z-10">
+                <!-- Item-1 -->
+                <div class="w-full flex items-center">
+                    <h2 class="font-mulish font-extrabold text-4xl text-deepBlueHead leading-[3.375rem] p-10">New in the <span class="text-lightBlue">Razorpay</span><br>Product Suite</h2>
+                </div>
+
+                <!-- Card-1 -->
+                <div class="bg-[url(/images/instant-settlement-bg.svg)] bg-no-repeat w-full max-h-[300px] cursor-pointer hover:scale-105 hover:bg-[url(/images/instant-settlement-bghover.svg)] transition-all duration-200 p-10 bg-white">
+                    <img src="./images/razorpayXicon.svg" alt="" class="w-10 h-10">
+
+                    <h3 class="font-mulish font-bold text-lg pt-4">Corporate Cards</h3>
+
+                    <p class="font-mulish py-3 text-grayText leading-normal">Simplify your recurring, international and team expenses with savings on every spend. Save upto 10 lacs every month.</p>
+
+                    <div class="flex items-center cursor-pointer inline group">
+                        <a href="" class="font-mulish font-bold text-lightBlue group-hover:text-grayText transition-all duration-200">Know More</a>
+                        <i class="fa-solid fa-greater-than text-lightBlue group-hover:text-grayText transition-all duration-200"></i>
+                    </div>
+                </div>
+
+                <!-- Card-2 -->
+                <div class="bg-[url(/images/instant-settlement-bg.svg)] bg-no-repeat w-full max-h-[300px] cursor-pointer hover:scale-105 hover:bg-[url(/images/instant-settlement-bghover.svg)] transition-all duration-200 p-10 bg-white">
+                    <img src="./images/autopay-icon.svg" alt="" class="w-10 h-10 bg-lightBlue rounded-full">
+
+                    <h3 class="font-mulish font-bold text-lg pt-4">UPI AutoPay</h3>
+
+                    <p class="font-mulish py-3 text-grayText leading-normal">Allow customers to set up recurring payments using UPI Apps.</p>
+
+                    <div class="flex items-center cursor-pointer inline group">
+                        <a href="" class="font-mulish font-bold text-lightBlue group-hover:text-grayText transition-all duration-200">Know More</a>
+                        <i class="fa-solid fa-greater-than text-lightBlue group-hover:text-grayText transition-all duration-200"></i>
+                    </div>
+                </div>
+
+                <!-- Card-3 -->
+                <div class="bg-[url(/images/instant-settlement-bg.svg)] bg-no-repeat w-full max-h-[300px] cursor-pointer hover:scale-105 hover:bg-[url(/images/instant-settlement-bghover.svg)] transition-all duration-200 p-10 bg-white">
+                    <img src="./images/magic-checkout.svg" alt="" class="w-10 h-10">
+
+                    <h3 class="font-mulish font-bold text-lg pt-4">Magic Checkout</h3>
+
+                    <p class="font-mulish py-3 text-grayText leading-normal">Improve your order conversion rates & reduce return-to-origins. Boost your business by 20%</p>
+
+                    <div class="flex items-center cursor-pointer inline group">
+                        <a href="" class="font-mulish font-bold text-lightBlue group-hover:text-grayText transition-all duration-200">Know More</a>
+                        <i class="fa-solid fa-greater-than text-lightBlue group-hover:text-grayText transition-all duration-200"></i>
+                    </div>
+                </div>
+
+                <!-- Card-4 -->
+                <div class="bg-[url(/images/instant-settlement-bg.svg)] bg-no-repeat w-full max-h-[300px] cursor-pointer hover:scale-105 hover:bg-[url(/images/instant-settlement-bghover.svg)] transition-all duration-200 p-10 bg-white">
+                    <img src="./images/payment-button.svg" alt="" class="w-10 h-10 bg-lightBlue rounded-full">
+
+                    <h3 class="font-mulish font-bold text-lg pt-4">Payment Button</h3>
+
+                    <p class="font-mulish py-3 text-grayText leading-normal">Accept payments on your website, in less than 5 minutes. No developer needed.</p>
+
+                    <div class="flex items-center cursor-pointer inline group">
+                        <a href="" class="font-mulish font-bold text-lightBlue group-hover:text-grayText transition-all duration-200">Know More</a>
+                        <i class="fa-solid fa-greater-than text-lightBlue group-hover:text-grayText transition-all duration-200"></i>
+                    </div>
+                </div>
+
+                <!-- Card-5 -->
+                <div class="bg-[url(/images/instant-settlement-bg.svg)] bg-no-repeat w-full max-h-[300px] cursor-pointer hover:scale-105 hover:bg-[url(/images/instant-settlement-bghover.svg)] transition-all duration-200 p-10 bg-white">
+                    <img src="./images/instant-settlement-icon.svg" alt="" class="w-10 h-10 bg-lightBlue rounded-full">
+
+                    <h3 class="font-mulish font-bold text-lg pt-4">Payment Button</h3>
+
+                    <p class="font-mulish py-3 text-grayText leading-normal">Accept payments on your website, in less than 5 minutes. No developer needed.</p>
+
+                    <div class="flex items-center cursor-pointer inline group">
+                        <a href="" class="font-mulish font-bold text-lightBlue group-hover:text-grayText transition-all duration-200">Know More</a>
+                        <i class="fa-solid fa-greater-than text-lightBlue group-hover:text-grayText transition-all duration-200"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- core feature -->
+    <section class="relative w-full bg-[url(/images/core-features-sectionBg.svg)] bg-no-repeat bg-cover bg-center mt-14 coreFeatureSection">
+        <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4">
+
+            <h2 class="font-mulish font-bold text-2xl text-white text-center">Features</h2>
+
+            <div class="w-6 h-1 bg-greenLight mx-auto mt-4 mb-6"></div>
+
+            <p class="font-mulish text-white text-center max-w-[450px] mx-auto">Empower your business with all the right tools to accept online payments and provide the best customer experience</p>
+
+            <div class="grid grid-cols-4 gap-[2rem] mt-8">
+                <!-- card-1 -->
+                <div class="relative w-full h-full">
+                    <img src="./images/instant-activation-icon.svg" alt="">
+                    <h3 class="font-mulish font-bold text-white text-lg my-4">Instant Activation</h3>
+                    <p class="font-mulish text-white opacity-80">Get activated and transact within 2 minutes. Completely online onboarding with minimum documentation.</p>
+                </div>
+
+                <!-- card-2 -->
+                <div class="relative w-full h-full">
+                    <img src="./images/instant-activation-icon.svg" alt="">
+                    <h3 class="font-mulish font-bold text-white text-lg my-4">Instant Activation</h3>
+                    <p class="font-mulish text-white opacity-80">Get activated and transact within 2 minutes. Completely online onboarding with minimum documentation.</p>
+                </div>
+
+                <!-- card-3 -->
+                <div class="relative w-full h-full">
+                    <img src="./images/instant-activation-icon.svg" alt="">
+                    <h3 class="font-mulish font-bold text-white text-lg my-4">Instant Activation</h3>
+                    <p class="font-mulish text-white opacity-80">Get activated and transact within 2 minutes. Completely online onboarding with minimum documentation.</p>
+                </div>
+
+                <!-- card-4 -->
+                <div class="relative w-full h-full">
+                    <img src="./images/instant-activation-icon.svg" alt="">
+                    <h3 class="font-mulish font-bold text-white text-lg my-4">Instant Activation</h3>
+                    <p class="font-mulish text-white opacity-80">Get activated and transact within 2 minutes. Completely online onboarding with minimum documentation.</p>
+                </div>
+
+                <!-- card-5 -->
+                <div class="relative w-full h-full">
+                    <img src="./images/instant-activation-icon.svg" alt="">
+                    <h3 class="font-mulish font-bold text-white text-lg my-4">Instant Activation</h3>
+                    <p class="font-mulish text-white opacity-80">Get activated and transact within 2 minutes. Completely online onboarding with minimum documentation.</p>
+                </div>
+
+                <!-- card-6 -->
+                <div class="relative w-full h-full">
+                    <img src="./images/instant-activation-icon.svg" alt="">
+                    <h3 class="font-mulish font-bold text-white text-lg my-4">Instant Activation</h3>
+                    <p class="font-mulish text-white opacity-80">Get activated and transact within 2 minutes. Completely online onboarding with minimum documentation.</p>
+                </div>
+
+                <!-- card-7 -->
+                <div class="relative w-full h-full">
+                    <img src="./images/instant-activation-icon.svg" alt="">
+                    <h3 class="font-mulish font-bold text-white text-lg my-4">Instant Activation</h3>
+                    <p class="font-mulish text-white opacity-80">Get activated and transact within 2 minutes. Completely online onboarding with minimum documentation.</p>
+                </div>
+
+                <!-- card-8 -->
+                <div class="relative w-full h-full">
+                    <img src="./images/instant-activation-icon.svg" alt="">
+                    <h3 class="font-mulish font-bold text-white text-lg my-4">Instant Activation</h3>
+                    <p class="font-mulish text-white opacity-80">Get activated and transact within 2 minutes. Completely online onboarding with minimum documentation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body> 
 </html>
