@@ -1,7 +1,13 @@
 .coreFeatureSection {
-    background-size: 100% 100%;
+    background-size: cover;
     padding-top: 12rem;
     padding-bottom: 12rem;
+
+    @media (min-width: 1024px) {
+        background-size: 100% 100%;
+        padding-top: 12rem;
+        padding-bottom: 12rem;
+    }
 }
 
 .companiesList{
@@ -18,5 +24,31 @@
 }
 
 .ctaSection{
-    background-size: 100% 100%;
+    background-size: cover;
+
+    @media (min-width: 1024px) {
+        background-size: 100% 100%;
+    }
+}
+
+.footerSection{
+    background: linear-gradient(to right, #eef9fe, #edf7ff);
+}
+
+.elementSelect{
+    display: none;
+
+    @media (min-width: 1170px) {
+        display: block;
+    }
+}
+
+.fontawesomeIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: 1170px) {
+        display: none;
+    }
 }
